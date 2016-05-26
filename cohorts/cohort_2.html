@@ -4,64 +4,148 @@
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.22/webcomponents.min.js"></script>
     <link rel="import" href="../imports/bootstrap.html">
+    <link rel="stylesheet" href="../assets/curriculum.css">
+
 </head>
 
 <body>
-<h1>Redi School curriculum cohort 2</h1>
+<div class="container">
+    <h1>Redi School curriculum cohort 2</h1>
 
-<h2>Aims and goals</h2>
-<ul>
-    <li>
-        An ability to use a linux machine with fluency and confidence. This means:
-        <ul>
-            <li>
-                Basic command line knowledge
-                <pre>ls cd mkdir touch apt-get </pre>
-                , what
-                <pre>sudo</pre>
-                does
-            </li>
-            <li>
-                User management, ability to install packages through the gui
-            </li>
-            <li>
-                Understanding that linux != ubuntu
-            </li>
-        </ul>
-    </li>
-    <li>
-        Understanding how to program. This means:
-        <ul>
-            <li>
-                expressions, variable assignments, arithmetic
-            </li>
-            <li>
-                Array comprehensions, inheritance, functions
-            </li>
-            <li>
-                debugging, working out how to do things, googling
-            </li>
-        </ul>
-    </li>
+    <h2>Aims and goals</h2>
+    <ul>
+        <li>
+            An ability to use a linux machine with fluency and confidence. This means:
+            <ul>
+                <li>
+                    Basic command line knowledge
+                    <code>ls cd mkdir touch apt-get </code>
+                    , what
+                    <code>sudo</code>
+                    does
+                </li>
+                <li>
+                    User management, ability to install packages through the gui
+                </li>
+                <li>
+                    Understanding that linux != ubuntu
+                </li>
+            </ul>
+        </li>
+        <li>
+            Understanding how to program for the web in JS. This means:
+            <ul>
+                <li>
+                    expressions, variable assignments, arithmetic
+                </li>
+                <li>
+                    Array comprehensions, inheritance, functions
+                </li>
+                <li>
+                    debugging, working out how to do things, googling
+                </li>
+                <li>
+                    debugging, working out how to do things, googling
+                </li>
+            </ul>
+        </li>
 
-    <li>
-        The ability to create and deploy a complex(?) website. This means:
-        <ul>
-            <li>
-                Learning enough HTML and CSS to express their visual sense through code
-            </li>
-            <li>
-                Having a basic understanding of the box model, and HTML nesting
-            </li>
-            <li>
-                Understanding CSS, and maybe a preprocessor (SASS?)
-            </li>
-            <li>
-                Knowing enough git to deploy to github pages, and to solve merge conflicts
-            </li>
-        </ul>
-    </li>
-</ul>
+        <li>
+            The ability to create and deploy a website. This means:
+            <ul>
+                <li>
+                    Learning enough HTML and CSS to express a sense of design through code
+                </li>
+                <li>
+                    Having a basic understanding of the box model, and HTML nesting
+                </li>
+                <li>
+                    Understanding CSS, and maybe a preprocessor (SASS?)
+                </li>
+                <li>
+                    Knowing enough git to deploy to github pages, and to solve merge conflicts
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr/>
+
+    <h2>Introductory Lessons</h2>
+
+    <p> These would be the lessons for students who haven't done coding before, these wouldn't necessarily be applicable
+        to all students</p>
+    <hr/>
+
+    <h3>Lesson 1 - welcome to your new Ubuntu machine!</h3>
+    The intent of this lesson is to make sure that all students are at the same level of computer literacy. It may not
+    be appropriate for all groups, particularly those who have done some programming before
+    <p>learning outcomes:</p>
+    <ul>Student will:
+        <li> - understand that this is different to a windows machine, and that the OS is different, what an OS is</li>
+        <li> - understand how to install new programs on the machine, demonstration through installing a
+            <code>.deb</code> using the gui, and using <code>apt-get</code></li>
+        <li> - learn to navigate through the file system using the command line including
+            <code>cd</code>,<code>touch</code>, <code>mkdir</code>, <code>rm</code> <code>(-r)</code></li>
+        <li>... anything extra needed?</li>
+    </ul>
+    <p>Teachers should be have familiarity with a *nix machine</p>
+    <hr/>
+
+    <h3>Lesson 2 - welcome to the internet</h3>
+    The intent of this lesson is to get the students to understand basically what the internet does, and have their hand
+    in creating it!
+    <p>learning outcomes:</p>
+    <ul>Student will:
+        <li> - understand the server / client model of the internet (i.e. understand what is going on when we make a
+            request)
+        </li>
+        <li> - understand URLs, be encouraged to think critically, about what is likely going on when we use the
+            internet (i.e. have some familiarity about web tech stacks?)
+        </li>
+        <li> - be able to create simple information focussed websites using common tags e.g.<code>h1</code>
+            <code>a</code> <code>p</code> <code>div</code></li>
+        <li> - understand what the CSS selectors <code>.</code> and <code>#</code></li>
+    </ul>
+
+    <h3>Lesson 3 - supercharged styling</h3>
+    The intent of this lesson is to get the students to be able to express something individualistic and creative. they
+    should start to be able to express almost any design intent using CSS.
+    They should be able to google their problems, and be encouraged to spend their spare time making their website
+    better
+
+    <p>learning outcomes:</p>
+    <ul>Student will:
+        <li> - start to understand the box model of CSS</li>
+        <li> - understand the rules of specificity of css selectors i.e. what <code>div.my-class a</code> means. By this
+            point students should be able to select any arbitrary DOM node on the page
+        </li>
+        <li> - understand how <code>flex</code> works, and how it makes layouting simpler</li>
+
+    </ul>
+    <blockquote>This lesson might be difficult for teachers/developers that don't work with CSS every day. Recommended
+        reading: <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model">here</a>,
+        teachers should also prepare for this lesson by implementing the
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes#Holy_Grail_Layout_example">Holy
+            Grail</a> layout
+    </blockquote>
+    <hr/>
+
+    <h3>Lesson 4 - JavaScript and the DOM</h3>
+    <hr/>
+
+    <h3>Lesson 5 - JavaScript and the DOM part 2</h3>
+    <hr/>
+
+    <h3>Lesson 6 - <code>fetch</code> and making AJAX calls</h3>
+    <hr/>
+
+    <h3>Lesson 7 - project, getting results from twitter</h3>
+    <hr/>
+
+</div>
+
 </body>
 
 </html>
