@@ -2,23 +2,195 @@
 <html>
 
 <head>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.22/webcomponents.min.js"></script>
     <link rel="import" href="imports/bootstrap.html">
+
 </head>
+
 <body>
 
-<div class="container">
-    <h1>Redi School curriculum</h1>
+<nav class="grey darken-4" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">
+        <img class="brand-logo-image"
+             width="30px"
+             height="30px">🤐Backchannel</a>
 
-    <p>This is the curriculum for the ReDi school, like most things, it's a work in progress, but it should be a useful
-        reference point for the material created for the course</p>
+        <ul class="right hide-on-med-and-down">
+            <link rel="import" href="imports/menu-items.html">
+        </ul>
 
-    <p>So, what are you looking for?</p>
+        <ul id="nav-mobile" class="side-nav">
+            <link rel="import" href="imports/menu-items.html">
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i
+                class="material-icons grey-text text-lighten-3">menu</i></a>
+    </div>
+</nav>
 
-    <div class="box"><a href="cohorts/cohort_1.html">Cohort 1 curriculum</a></div>
-    <div class="box"><a href="cohorts/cohort_2.html">Cohort 2 curriculum</a></div>
+<div class="section no-pad-bot first-blue">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m8">
+                <h1 class="header center"> 🤐Backchannel</h1>
+                <div class="row center">
+                    <h5 class="header col s12 light">Realtime anonymous feedback from your employees.
+                        <img class="emojikit bar_chart" />
 
+                    </h5>
+                </div>
+
+                <div class="row center">
+                    <a href="http://materializecss.com/getting-started.html" id="download-button"
+                       class="btn-large waves-effect waves-light grey darken-4 first-blue-text">Get Started</a>
+                </div>
+
+                <br>
+
+                <div class="row center">
+                    <a href="https://slack.com/oauth/authorize?scope=identify,commands,reactions:write,chat:write:bot&client_id=16839103392.17540259856&state=UK4SC8GPRUEP20IRTNNOYQ10QK57T4KKQ9B6&redirect_uri=https://simplepoll.rocks/oauthcallback/"><img
+                            alt="Add to Slack" height="40" width="139"
+                            src="https://platform.slack-edge.com/img/add_to_slack.png"
+                            srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x"></a>
+                </div>
+
+            </div>
+            <div class="col s12 m4">
+
+                <img class="img-responsive mobile-screenshot" /> Screenshot of app on mobile
+
+                <p>Works wherever Slack works</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section no-pad-bot second-green">
+        <div class="container">
+            <div class="section">
+
+                <!--   Icon Section   -->
+                <div class="row">
+
+                    <div class="col s12 m6">
+                        <div class="icon-block">
+                            <h3>Anonymous and native</h3>
+
+                            <p class="landing-page-text">Get the pulse of your company, no holds barred by allowing your
+                                employees to engage in anonymous, realtime feedback</p>
+
+                            <p class="landing-page-text">Backchannel allows for selected managers or team-leads to
+                                engage in anonymous feedback with their employees</p>
+
+                        </div>
+                    </div>
+
+                    <div class="col s12 m6">
+                        <div class="icon-block">
+                            <div class="container">
+                                <img class="img-responsive circle" width="300px" heigh="300px" /> Image of it being used
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <br>
+
+            <div class="section">
+                <div class="row">
+
+                    <div class="col s12 m6">
+                        <div class="icon-block">
+                            <div class="container">
+                                <img class="img-responsive circle" width="300px" heigh="300px" /> Image of it being used
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col s12 m6">
+                        <div class="icon-block">
+                            <h3>Privacy conscious</h3>
+
+                            <p class="landing-page-text">No information is ever stored on Backchannel's servers. Ability
+                                to engage in anonymous chats is restricted.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <br>
+            <br>
+        </div>
+    </div>
+
+    <div class="section no-pad-bot third-pink">
+        <div class="container">
+            <div class="section">
+                <div class="row">
+                    <div class="col s12 m12">
+                        <div class="icon-block">
+                            <!--<h3 class="center">Watch the video <img class="emojikit video_camera"></h3>-->
+
+                            <div class="video-container">
+                                <iframe width="1000" height="777"
+                                        src="https://www.youtube.com/embed/G6C9v6gvCs4?rel=0&showinfo=0&autohide=1"
+                                        frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer fourth-yellow">
+        <div class="container">
+            <div class="row">
+                <div class="col l4 s12">
+                    <!--<h5><img class="emojikit email"></h5>-->
+                    <ul>
+
+                        <!--<li style="padding-top: 10px"><a class="waves-effect waves-light btn grey darken-4"-->
+                        <!--href="//simplepoll.uservoice.com" target="blank"><img-->
+                        <!--src="/static/main/images/uservoice-compressed.png" class="uservoice-button"-->
+                        <!--draggable="false"></a></li>-->
+                    </ul>
+                </div>
+                <div class="col l4 s12 center">
+                    <ul>
+                        <li><a href="https://twitter.com/backchannel"><i class="fa fa-twitter fa-3x"></i></a></li>
+                        <li><a href="https://www.facebook.com/backchannel/"><i class="fa fa-facebook fa-3x"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l4 s12">
+                    <div class="right">
+                        <!--<h5><img class="emojikit world_map"></h5>-->
+                        <ul>
+                            <li><a class="link-underline" href="/faq/">FAQ</a></li>
+                            <!--<li><a class="link-underline" href="/scopes/"/>OAuth scopes</a></li>-->
+                            <br>
+                            <!--<li><a href="https://mixpanel.com/f/partner" rel="nofollow"><img-->
+                            <!--src="//cdn.mxpnl.com/site_media/images/partner/badge_light.png"-->
+                            <!--alt="Mobile Analytics"/></a></li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <span>Made with <img class="emojikit heart"> in Berlin</span>
+                <span class="right">© Backchannel 2016</span>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Emojikit JS-->
+    <script type="text/javascript" src="//emojikit.com/js/emojikit.js"></script>
 </div>
-</body>
-
-</html>

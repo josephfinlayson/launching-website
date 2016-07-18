@@ -1,0 +1,22 @@
+{
+  "name": "launching-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReDI-School/curriculum.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ReDI-School/curriculum/issues"
+  },
+  "homepage": "https://github.com/ReDI-School/curriculum#readme",
+  "dependencies": {
+    "materialize-css": "^0.97.6"
+  }
+}
